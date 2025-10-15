@@ -1,6 +1,6 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useFormStatus } from 'react';
 import { Bot, Send, Loader2 } from 'lucide-react';
 import { askQuestion, type AIAssistantFormState } from '@/app/actions';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -19,7 +19,7 @@ function SubmitButton() {
 
 export function AiAssistant({ subjectSlug }: { subjectSlug: string }) {
   const initialState: AIAssistantFormState = { message: '', errors: {} };
-  const [state, dispatch] = useFormState(askQuestion, initialState);
+  const [state, dispatch] = useActionState(askQuestion, initialState);
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
