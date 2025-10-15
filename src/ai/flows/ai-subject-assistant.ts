@@ -18,8 +18,8 @@ const AISubjectAssistantInputSchema = z.object({
 export type AISubjectAssistantInput = z.infer<typeof AISubjectAssistantInputSchema>;
 
 const AISubjectAssistantOutputSchema = z.object({
-  answer: z.string().describe('The canned response from the AI assistant.'),
-  citations: z.array(z.string()).describe('An empty array of citations.'),
+  answer: z.string().describe('The answer from the AI assistant.'),
+  citations: z.array(z.string()).describe('An array of citations if any were used to construct the answer.'),
 });
 export type AISubjectAssistantOutput = z.infer<typeof AISubjectAssistantOutputSchema>;
 
@@ -33,7 +33,9 @@ const prompt = ai.definePrompt({
   output: {schema: AISubjectAssistantOutputSchema},
   prompt: `You are a helpful AI assistant for the TunEdu application, specializing in providing information related to the subject specified by subjectSlug.
 
-  When answering questions, you must respond with a canned message. The canned message is: "Fonctionnalité à venir. Je me base sur le manuel pour répondre."
+  Your response should be in French.
+
+  You should answer the user's question based on the subject. Provide a helpful and concise answer.
 
   Subject Slug: {{{subjectSlug}}}
   Question: {{{question}}}
@@ -48,9 +50,6 @@ const aiSubjectAssistantFlow = ai.defineFlow(
   },
   async input => {
     const {output} = await prompt(input);
-    return {
-      answer: "Fonctionnalité à venir. Je me base sur le manuel pour répondre.",
-      citations: [],
-    };
+    return output!;
   }
 );
