@@ -108,7 +108,7 @@ export const exercises: Exercise[] = [
 
 export const comments: Comment[] = [
   { id: 'comment-1', user: mockUser, body: 'Merci beaucoup pour cette explication claire !', createdAt: 'Il y a 2 heures' },
-  { id: 'comment-2', user: { id: 'user-2', firstName: 'Yassin', lastName: 'Abid', email: 'yassin.abid@tuned.tn', role: 'STUDENT', avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop' }, body: 'Est-ce qu\'on pourrait avoir plus d\'exercices sur les limites ?', createdAt: 'Il y a 1 jour' },
+  { id: 'comment-2', user: { id: 'user-2', firstName: 'Yassin', lastName: 'Abid', email: 'yassin.abid@tuned.tn', role: 'STUDENT' }, body: 'Est-ce qu\'on pourrait avoir plus d\'exercices sur les limites ?', createdAt: 'Il y a 1 jour' },
 ];
 
 export const dashboardStats: DashboardStats = {
