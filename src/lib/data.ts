@@ -2,11 +2,11 @@ import type { Level, ClassYear, Subject, Lesson, RecordedSession, Exercise, Comm
 
 export const mockUser: User = {
   id: 'user-1',
-  firstName: 'Ahmed',
-  lastName: 'Cherif',
-  email: 'ahmed.cherif@tuned.tn',
+  firstName: 'Med Alaa',
+  lastName: 'Elabed',
+  email: 'med.alaa.elabed@tuned.tn',
   role: 'STUDENT',
-  avatarUrl: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop',
+  avatarUrl: 'https://images.unsplash.com/photo-1707563050179-4ad36928a7e0?w=100&h=100&fit=crop',
 };
 
 export const levels: Level[] = [
@@ -108,7 +108,7 @@ export const exercises: Exercise[] = [
 
 export const comments: Comment[] = [
   { id: 'comment-1', user: mockUser, body: 'Merci beaucoup pour cette explication claire !', createdAt: 'Il y a 2 heures' },
-  { id: 'comment-2', user: { ...mockUser, id: 'user-2', firstName: 'Sarah', lastName: 'Ben Ali', avatarUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop' }, body: 'Est-ce qu\'on pourrait avoir plus d\'exercices sur les limites ?', createdAt: 'Il y a 1 jour' },
+  { id: 'comment-2', user: { id: 'user-2', firstName: 'Yassin', lastName: 'Abid', email: 'yassin.abid@tuned.tn', role: 'STUDENT', avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop' }, body: 'Est-ce qu\'on pourrait avoir plus d\'exercices sur les limites ?', createdAt: 'Il y a 1 jour' },
 ];
 
 export const dashboardStats: DashboardStats = {
