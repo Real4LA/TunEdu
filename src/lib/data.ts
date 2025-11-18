@@ -1,3 +1,4 @@
+
 import type { Level, ClassYear, Subject, Lesson, RecordedSession, Exercise, Comment, User, DashboardStats } from './types';
 
 export const mockUser: User = {
@@ -35,91 +36,288 @@ export const classYears: ClassYear[] = [
 ];
 
 export const subjects: Subject[] = [
-  // --- 9ème Année ---
+  // --- 1ère Année Primaire ---
   {
-    id: 'subj-4',
-    classYearSlug: '9eme-annee',
+    id: 'subj-p1-1',
+    classYearSlug: '1ere-annee-primaire',
+    name: 'Lecture (Arabe)',
+    slug: 'lecture-ar-1ere',
+    description: 'Apprentissage des lettres et des sons en Arabe.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'books library'
+  },
+  {
+    id: 'subj-p1-2',
+    classYearSlug: '1ere-annee-primaire',
+    name: 'Écriture et Graphisme',
+    slug: 'ecriture-1ere',
+    description: 'Tenue du crayon et formation des lettres.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'pencil writing'
+  },
+  {
+    id: 'subj-p1-3',
+    classYearSlug: '1ere-annee-primaire',
+    name: 'Calcul',
+    slug: 'calcul-1ere',
+    description: 'Introduction aux nombres et aux opérations de base.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abacus numbers'
+  },
+  // --- 2ème Année Primaire ---
+  {
+    id: 'subj-p2-1',
+    classYearSlug: '2eme-annee-primaire',
+    name: 'Lecture (Arabe)',
+    slug: 'lecture-ar-2eme',
+    description: 'Lecture de phrases simples et de textes courts.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'books library'
+  },
+  {
+    id: 'subj-p2-2',
+    classYearSlug: '2eme-annee-primaire',
+    name: 'Calcul',
+    slug: 'calcul-2eme',
+    description: 'Addition, soustraction et résolution de petits problèmes.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abacus numbers'
+  },
+  {
+    id: 'subj-p2-3',
+    classYearSlug: '2eme-annee-primaire',
+    name: 'Éveil scientifique',
+    slug: 'eveil-scientifique-2eme',
+    description: 'Découverte du monde vivant et de la matière.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'science lab'
+  },
+  // --- 3ème Année Primaire ---
+  {
+    id: 'subj-p3-1',
+    classYearSlug: '3eme-annee-primaire',
     name: 'Français',
-    slug: 'francais-9eme',
-    description: 'Langue et littérature française pour la 9ème année.',
+    slug: 'francais-3eme',
+    description: 'Introduction à la langue française, lecture et écriture.',
     manualUrl: '/sample.pdf',
     thumbnailUrl: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'eiffel tower'
   },
   {
-    id: 'subj-5',
-    classYearSlug: '9eme-annee',
+    id: 'subj-p3-2',
+    classYearSlug: '3eme-annee-primaire',
     name: 'Arabe',
-    slug: 'arabe-9eme',
-    description: 'Langue et littérature Arabe pour la 9ème année.',
+    slug: 'arabe-3eme',
+    description: 'Grammaire, conjugaison et lecture de textes variés.',
     manualUrl: '/sample.pdf',
     thumbnailUrl: 'https://images.unsplash.com/photo-1627490079334-135b9a702a4a?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'arabic calligraphy'
   },
   {
-    id: 'subj-6',
-    classYearSlug: '9eme-annee',
+    id: 'subj-p3-3',
+    classYearSlug: '3eme-annee-primaire',
     name: 'Mathématiques',
-    slug: 'maths-9eme',
-    description: 'Programme de mathématiques pour la 9ème année.',
+    slug: 'maths-3eme',
+    description: 'Multiplication, division et introduction aux fractions.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abstract math'
+  },
+  // --- 4ème Année Primaire ---
+  {
+    id: 'subj-p4-1',
+    classYearSlug: '4eme-annee-primaire',
+    name: 'Français',
+    slug: 'francais-4eme',
+    description: 'Compréhension de textes, production écrite et grammaire.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'eiffel tower'
+  },
+  {
+    id: 'subj-p4-2',
+    classYearSlug: '4eme-annee-primaire',
+    name: 'Mathématiques',
+    slug: 'maths-4eme',
+    description: 'Les nombres décimaux, la géométrie et les mesures.',
     manualUrl: '/sample.pdf',
     thumbnailUrl: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'abstract math'
   },
   {
-    id: 'subj-7',
-    classYearSlug: '9eme-annee',
-    name: 'Sciences de la Vie et de la Terre',
-    slug: 'svt-9eme',
-    description: 'Biologie et géologie pour la 9ème année.',
+    id: 'subj-p4-3',
+    classYearSlug: '4eme-annee-primaire',
+    name: 'Histoire-Géographie',
+    slug: 'hist-geo-4eme',
+    description: 'L\'histoire de la Tunisie et la géographie locale.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1524103441346-34a12913b18c?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'ancient map'
+  },
+  // --- 5ème Année Primaire ---
+  {
+    id: 'subj-p5-1',
+    classYearSlug: '5eme-annee-primaire',
+    name: 'Arabe',
+    slug: 'arabe-5eme',
+    description: 'Analyse de textes et notions de grammaire avancées.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1627490079334-135b9a702a4a?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'arabic calligraphy'
+  },
+  {
+    id: 'subj-p5-2',
+    classYearSlug: '5eme-annee-primaire',
+    name: 'Français',
+    slug: 'francais-5eme',
+    description: 'Enrichissement du vocabulaire et structures complexes.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'eiffel tower'
+  },
+  {
+    id: 'subj-p5-3',
+    classYearSlug: '5eme-annee-primaire',
+    name: 'Sciences de la Vie',
+    slug: 'svt-5eme',
+    description: 'Le corps humain, la nutrition et l\'environnement.',
     manualUrl: '/sample.pdf',
     thumbnailUrl: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'science lab'
   },
-  // --- BAC (4ème Année) ---
+  // --- 6ème Année Primaire ---
   {
-    id: 'subj-1',
-    classYearSlug: 'bac',
+    id: 'subj-p6-1',
+    classYearSlug: '6eme-annee-primaire',
+    name: 'Éducation Civique',
+    slug: 'civique-6eme',
+    description: 'Droits, devoirs et institutions pour la préparation au concours.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1588698224391-236f0435538d?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'government building'
+  },
+  {
+    id: 'subj-p6-2',
+    classYearSlug: '6eme-annee-primaire',
+    name: 'Calcul',
+    slug: 'calcul-6eme',
+    description: 'Opérations et résolution de problèmes pour la 6ème année.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abacus numbers'
+  },
+  {
+    id: 'subj-p6-3',
+    classYearSlug: '6eme-annee-primaire',
+    name: 'Français',
+    slug: 'francais-6eme',
+    description: 'Préparation à l\'examen de fin d\'études primaires.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'eiffel tower'
+  },
+  // --- 7ème Année ---
+  {
+    id: 'subj-c7-1',
+    classYearSlug: '7eme-annee',
+    name: 'Anglais',
+    slug: 'anglais-7eme',
+    description: 'Introduction à la langue anglaise et à la culture anglophone.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'london bridge'
+  },
+  {
+    id: 'subj-c7-2',
+    classYearSlug: '7eme-annee',
     name: 'Mathématiques',
-    slug: 'maths-bac',
-    description: 'Programme complet de mathématiques pour la section Bac Sciences Expérimentales.',
+    slug: 'maths-7eme',
+    description: 'Algèbre, géométrie et introduction aux ensembles.',
     manualUrl: '/sample.pdf',
     thumbnailUrl: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'abstract math'
   },
   {
-    id: 'subj-2',
-    classYearSlug: 'bac',
-    name: 'Physique-Chimie',
-    slug: 'physique-chimie-bac',
-    description: 'Physique et Chimie pour la section Bac Sciences.',
+    id: 'subj-c7-3',
+    classYearSlug: '7eme-annee',
+    name: 'Sciences Physiques',
+    slug: 'physique-7eme',
+    description: 'Introduction à la physique et la chimie.',
     manualUrl: '/sample.pdf',
     thumbnailUrl: 'https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'abstract physics'
   },
+   // --- 8ème Année ---
   {
-    id: 'subj-3',
-    classYearSlug: 'bac',
+    id: 'subj-c8-1',
+    classYearSlug: '8eme-annee',
+    name: 'Français',
+    slug: 'francais-8eme',
+    description: 'Littérature, grammaire et expression écrite.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'eiffel tower'
+  },
+  {
+    id: 'subj-c8-2',
+    classYearSlug: '8eme-annee',
+    name: 'Histoire',
+    slug: 'histoire-8eme',
+    description: 'Les civilisations anciennes et le Moyen Âge.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1524103441346-34a12913b18c?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'ancient map'
+  },
+  {
+    id: 'subj-c8-3',
+    classYearSlug: '8eme-annee',
     name: 'Informatique',
-    slug: 'info-bac',
-    description: 'Algorithmique et programmation pour le Bac.',
+    slug: 'info-8eme',
+    description: 'Initiation à l\'algorithmique et à la bureautique.',
     manualUrl: '/sample.pdf',
     thumbnailUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'circuit board'
   },
+  // --- 9ème Année ---
   {
-    id: 'subj-8',
-    classYearSlug: 'bac',
-    name: 'Philosophie',
-    slug: 'philo-bac',
-    description: 'Les grands courants de la pensée philosophique.',
+    id: 'subj-c9-1',
+    classYearSlug: '9eme-annee',
+    name: 'Français',
+    slug: 'francais-9eme',
+    description: 'Préparation au diplôme de fin d\'études de l\'enseignement de base.',
     manualUrl: '/sample.pdf',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1456325504700-a91019e0e3c5?q=80&w=600&h=400&fit=crop',
-    thumbnailHint: 'ancient ruins'
+    thumbnailUrl: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'eiffel tower'
+  },
+  {
+    id: 'subj-c9-2',
+    classYearSlug: '9eme-annee',
+    name: 'Mathématiques',
+    slug: 'maths-9eme',
+    description: 'Programme de mathématiques pour le concours de la 9ème année.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abstract math'
+  },
+  {
+    id: 'subj-c9-3',
+    classYearSlug: '9eme-annee',
+    name: 'Sciences de la Vie et de la Terre',
+    slug: 'svt-9eme',
+    description: 'Biologie et géologie pour la préparation au diplôme.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'science lab'
   },
   // --- 1ère Année Secondaire ---
   {
-    id: 'subj-9',
+    id: 'subj-l1-1',
     classYearSlug: '1ere-annee-secondaire',
     name: 'Histoire',
     slug: 'histoire-1ere',
@@ -129,7 +327,7 @@ export const subjects: Subject[] = [
     thumbnailHint: 'ancient map'
   },
   {
-    id: 'subj-10',
+    id: 'subj-l1-2',
     classYearSlug: '1ere-annee-secondaire',
     name: 'Géographie',
     slug: 'geo-1ere',
@@ -138,58 +336,118 @@ export const subjects: Subject[] = [
     thumbnailUrl: 'https://images.unsplash.com/photo-1542042161-d19f5a543313?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'world globe'
   },
-  // --- 7ème Année ---
   {
-    id: 'subj-11',
-    classYearSlug: '7eme-annee',
-    name: 'Anglais',
-    slug: 'anglais-7eme',
-    description: 'Introduction à la langue anglaise.',
+    id: 'subj-l1-3',
+    classYearSlug: '1ere-annee-secondaire',
+    name: 'Physique-Chimie',
+    slug: 'physique-chimie-1ere',
+    description: 'Notions fondamentales en physique et chimie.',
     manualUrl: '/sample.pdf',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600&h=400&fit=crop',
-    thumbnailHint: 'london bridge'
+    thumbnailUrl: 'https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abstract physics'
   },
-  // --- 6ème Année Primaire ---
+  // --- 2ème Année Secondaire ---
   {
-    id: 'subj-12',
-    classYearSlug: '6eme-annee-primaire',
-    name: 'Éducation Civique',
-    slug: 'civique-6eme',
-    description: 'Droits, devoirs et institutions.',
+    id: 'subj-l2-1',
+    classYearSlug: '2eme-annee-secondaire',
+    name: 'Économie',
+    slug: 'economie-2eme',
+    description: 'Principes fondamentaux de la microéconomie et de la macroéconomie.',
     manualUrl: '/sample.pdf',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1588698224391-236f0435538d?q=80&w=600&h=400&fit=crop',
-    thumbnailHint: 'government building'
-  },
-  {
-    id: 'subj-13',
-    classYearSlug: '6eme-annee-primaire',
-    name: 'Calcul',
-    slug: 'calcul-6eme',
-    description: 'Opérations et résolution de problèmes.',
-    manualUrl: '/sample.pdf',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=600&h=400&fit=crop',
-    thumbnailHint: 'abacus numbers'
-  },
-  // --- 1ère Année Primaire ---
-  {
-    id: 'subj-14',
-    classYearSlug: '1ere-annee-primaire',
-    name: 'Lecture (Arabe)',
-    slug: 'lecture-ar-1ere',
-    description: 'Apprentissage des lettres et des sons.',
-    manualUrl: '/sample.pdf',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=600&h=400&fit=crop',
-    thumbnailHint: 'books library'
+    thumbnailUrl: 'https://images.unsplash.com/photo-1600456532244-5d518c7d67c5?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'stock market'
   },
   {
-    id: 'subj-15',
-    classYearSlug: '1ere-annee-primaire',
-    name: 'Écriture et Graphisme',
-    slug: 'ecriture-1ere',
-    description: 'Tenue du crayon et formation des lettres.',
+    id: 'subj-l2-2',
+    classYearSlug: '2eme-annee-secondaire',
+    name: 'Gestion',
+    slug: 'gestion-2eme',
+    description: 'Introduction aux principes de la gestion d\'entreprise.',
     manualUrl: '/sample.pdf',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?q=80&w=600&h=400&fit=crop',
-    thumbnailHint: 'pencil writing'
+    thumbnailUrl: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'business meeting'
+  },
+  {
+    id: 'subj-l2-3',
+    classYearSlug: '2eme-annee-secondaire',
+    name: 'Technologie',
+    slug: 'techno-2eme',
+    description: 'Conception et fabrication assistées par ordinateur (CFAO).',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'robot arm'
+  },
+  // --- 3ème Année Secondaire ---
+  {
+    id: 'subj-l3-1',
+    classYearSlug: '3eme-annee-secondaire',
+    name: 'Mathématiques (Sciences)',
+    slug: 'maths-3eme-sciences',
+    description: 'Analyse, algèbre et géométrie pour les sections scientifiques.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abstract math'
+  },
+  {
+    id: 'subj-l3-2',
+    classYearSlug: '3eme-annee-secondaire',
+    name: 'Algorithmique et Programmation',
+    slug: 'algo-3eme',
+    description: 'Structures de données et algorithmes avancés.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'circuit board'
+  },
+  {
+    id: 'subj-l3-3',
+    classYearSlug: '3eme-annee-secondaire',
+    name: 'Philosophie',
+    slug: 'philo-3eme',
+    description: 'Les grandes questions philosophiques et les auteurs majeurs.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1456325504700-a91019e0e3c5?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'ancient ruins'
+  },
+  // --- BAC (4ème Année) ---
+  {
+    id: 'subj-bac-1',
+    classYearSlug: 'bac',
+    name: 'Mathématiques',
+    slug: 'maths-bac',
+    description: 'Programme complet pour le Baccalauréat (toutes sections).',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abstract math'
+  },
+  {
+    id: 'subj-bac-2',
+    classYearSlug: 'bac',
+    name: 'Physique-Chimie',
+    slug: 'physique-chimie-bac',
+    description: 'Programme de Physique et Chimie pour le Baccalauréat.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abstract physics'
+  },
+  {
+    id: 'subj-bac-3',
+    classYearSlug: 'bac',
+    name: 'Informatique (Section Info)',
+    slug: 'info-bac',
+    description: 'Algorithmique et programmation pour le Bac Informatique.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'circuit board'
+  },
+  {
+    id: 'subj-bac-4',
+    classYearSlug: 'bac',
+    name: 'Philosophie',
+    slug: 'philo-bac',
+    description: 'Les grands courants de la pensée philosophique pour le Bac.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1456325504700-a91019e0e3c5?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'ancient ruins'
   },
 ];
 
@@ -223,3 +481,5 @@ export const dashboardStats: DashboardStats = {
   lessonsViewed: 3,
   exercisesOpened: 2,
 };
+
+    
