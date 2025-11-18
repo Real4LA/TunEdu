@@ -34,7 +34,6 @@ To run this project on your local machine, follow these steps.
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/Real4LA/TunEdu
-    cd <project-directory>
     ```
 
 2.  **Install dependencies:**
