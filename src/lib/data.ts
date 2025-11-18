@@ -453,41 +453,72 @@ export const subjects: Subject[] = [
 
 
 export const lessons: Lesson[] = [
-  // Maths BAC
-  { id: 'lesson-1', subjectSlug: 'maths-bac', title: 'Fonctions Logarithmiques', slug: 'fonctions-log', summary: 'Étude complète des fonctions logarithmiques.', order: 1, score: 125 },
-  { id: 'lesson-2', subjectSlug: 'maths-bac', title: 'Nombres Complexes', slug: 'nombres-complexes', summary: 'Introduction aux nombres complexes et à leurs applications.', order: 2, score: 98 },
-  { id: 'lesson-3', subjectSlug: 'maths-bac', title: 'Probabilités', slug: 'probabilites', summary: 'Probabilités conditionnelles et lois de probabilité.', order: 3, score: 150 },
-  
-  // Physique-Chimie BAC
-  { id: 'lesson-4', subjectSlug: 'physique-chimie-bac', title: 'La Dipôle RC', slug: 'dipole-rc', summary: 'Analyse du comportement d\'un dipôle RC.', order: 1, score: 210 },
-  { id: 'lesson-5', subjectSlug: 'physique-chimie-bac', title: 'Modulation et Démodulation', slug: 'modulation', summary: 'Principes de la modulation d\'amplitude.', order: 2, score: 180 },
+  // --- Primaire ---
+  // 1ère
+  { id: 'lesson-p1-1', subjectSlug: 'lecture-ar-1ere', title: 'La lettre Alif (أ)', slug: 'alif', summary: 'Apprendre à reconnaître et prononcer la lettre Alif.', order: 1, score: 10 },
+  { id: 'lesson-p1-2', subjectSlug: 'ecriture-1ere', title: 'Tracer des lignes droites', slug: 'lignes-droites', summary: 'Exercices de graphisme pour s\'habituer à tenir le crayon.', order: 1, score: 8 },
+  { id: 'lesson-p1-3', subjectSlug: 'calcul-1ere', title: 'Compter jusqu\'à 5', slug: 'compter-5', summary: 'Apprendre à compter et reconnaître les chiffres jusqu\'à 5.', order: 1, score: 12 },
+  // 2ème
+  { id: 'lesson-p2-1', subjectSlug: 'lecture-ar-2eme', title: 'Lire des mots de 3 lettres', slug: 'mots-3-lettres', summary: 'Combiner des lettres pour lire des mots simples.', order: 1, score: 15 },
+  { id: 'lesson-p2-2', subjectSlug: 'calcul-2eme', title: 'L\'addition simple', slug: 'addition-simple-2eme', summary: 'Apprendre à faire des additions sans retenue.', order: 1, score: 18 },
+  { id: 'lesson-p2-3', subjectSlug: 'eveil-scientifique-2eme', title: 'Les états de l\'eau', slug: 'etats-eau', summary: 'Découvrir les états solide, liquide et gazeux.', order: 1, score: 14 },
+  // 3ème
+  { id: 'lesson-p3-1', subjectSlug: 'francais-3eme', title: 'Se présenter', slug: 'se-presenter', summary: 'Apprendre les phrases de base pour se présenter en français.', order: 1, score: 20 },
+  { id: 'lesson-p3-2', subjectSlug: 'arabe-3eme', title: 'Le nom et le verbe', slug: 'nom-verbe', summary: 'Distinguer entre un nom et un verbe dans une phrase.', order: 1, score: 22 },
+  { id: 'lesson-p3-3', subjectSlug: 'maths-3eme', title: 'La table de multiplication de 2', slug: 'table-2', summary: 'Mémoriser et appliquer la table de multiplication de 2.', order: 1, score: 25 },
+  // 4ème
+  { id: 'lesson-p4-1', subjectSlug: 'francais-4eme', title: 'Le passé composé', slug: 'passe-compose', summary: 'Conjuguer les verbes du premier groupe au passé composé.', order: 1, score: 30 },
+  { id: 'lesson-p4-2', subjectSlug: 'maths-4eme', title: 'Les fractions simples', slug: 'fractions-simples', summary: 'Comprendre et représenter les fractions.', order: 1, score: 35 },
+  { id: 'lesson-p4-3', subjectSlug: 'hist-geo-4eme', title: 'Carthage', slug: 'carthage', summary: 'L\'histoire de la civilisation carthaginoise.', order: 1, score: 28 },
+  // 5ème
+  { id: 'lesson-p5-1', subjectSlug: 'arabe-5eme', title: 'L\'analyse grammaticale (I’rab)', slug: 'irab-simple', summary: 'Introduction à l\'analyse grammaticale simple.', order: 1, score: 40 },
+  { id: 'lesson-p5-2', subjectSlug: 'francais-5eme', title: 'Le futur simple', slug: 'futur-simple', summary: 'Formation et utilisation du futur simple.', order: 1, score: 38 },
+  { id: 'lesson-p5-3', subjectSlug: 'svt-5eme', title: 'Le système digestif', slug: 'systeme-digestif', summary: 'Le trajet des aliments dans le corps humain.', order: 1, score: 42 },
+  // 6ème
+  { id: 'lesson-p6-1', subjectSlug: 'civique-6eme', title: 'La constitution tunisienne', slug: 'constitution-tunisienne', summary: 'Les grands principes de la constitution.', order: 1, score: 45 },
+  { id: 'lesson-p6-2', subjectSlug: 'calcul-6eme', title: 'La règle de trois', slug: 'regle-de-trois', summary: 'Résoudre des problèmes de proportionnalité.', order: 1, score: 50 },
+  { id: 'lesson-p6-3', subjectSlug: 'francais-6eme', title: 'Analyse d\'un texte narratif', slug: 'texte-narratif', summary: 'Structure et caractéristiques du texte narratif.', order: 1, score: 48 },
 
-  // Français 9ème
-  { id: 'lesson-6', subjectSlug: 'francais-9eme', title: 'Le Discours Direct et Indirect', slug: 'discours-rapporte', summary: 'Maîtriser la transformation du discours.', order: 1, score: 55 },
-  { id: 'lesson-7', subjectSlug: 'francais-9eme', title: 'Les figures de style', slug: 'figures-de-style', summary: 'Identifier et analyser les figures de style.', order: 2, score: 72 },
+  // --- Collège ---
+  // 7ème
+  { id: 'lesson-c7-1', subjectSlug: 'anglais-7eme', title: 'Greetings and Introductions', slug: 'greetings-7eme', summary: 'Learn basic English greetings.', order: 1, score: 30 },
+  { id: 'lesson-c7-2', subjectSlug: 'maths-7eme', title: 'Les ensembles et les opérations', slug: 'ensembles-7eme', summary: 'Opérations sur les ensembles: intersection, union.', order: 1, score: 88 },
+  { id: 'lesson-c7-3', subjectSlug: 'physique-7eme', title: 'La mesure de volume', slug: 'mesure-volume', summary: 'Utiliser une éprouvette graduée.', order: 1, score: 35 },
+  // 8ème
+  { id: 'lesson-c8-1', subjectSlug: 'francais-8eme', title: 'La description', slug: 'description-8eme', summary: 'Apprendre à décrire un lieu, un objet, une personne.', order: 1, score: 40 },
+  { id: 'lesson-c8-2', subjectSlug: 'histoire-8eme', title: 'La civilisation islamique', slug: 'civilisation-islamique', summary: 'L\'âge d\'or de la civilisation islamique.', order: 1, score: 45 },
+  { id: 'lesson-c8-3', subjectSlug: 'info-8eme', title: 'Les Boucles', slug: 'boucles-algo', summary: 'Apprendre à utiliser les boucles (Pour, Tant que).', order: 1, score: 45 },
+  // 9ème
+  { id: 'lesson-c9-1', subjectSlug: 'francais-9eme', title: 'Le Discours Direct et Indirect', slug: 'discours-rapporte', summary: 'Maîtriser la transformation du discours.', order: 1, score: 55 },
+  { id: 'lesson-c9-2', subjectSlug: 'francais-9eme', title: 'Les figures de style', slug: 'figures-de-style', summary: 'Identifier et analyser les figures de style.', order: 2, score: 72 },
+  { id: 'lesson-c9-3', subjectSlug: 'maths-9eme', title: 'Les équations du premier degré', slug: 'equations-9eme', summary: 'Résolution d\'équations à une inconnue.', order: 1, score: 60 },
+  { id: 'lesson-c9-4', subjectSlug: 'svt-9eme', title: 'La transmission des caractères héréditaires', slug: 'genetique-9eme', summary: 'Introduction à la génétique et aux lois de Mendel.', order: 1, score: 110 },
+  { id: 'lesson-c9-5', subjectSlug: 'svt-9eme', title: 'Le système nerveux', slug: 'systeme-nerveux-9eme', summary: 'Organisation et fonctionnement du système nerveux.', order: 2, score: 95 },
 
-  // SVT 9ème
-  { id: 'lesson-8', subjectSlug: 'svt-9eme', title: 'La transmission des caractères héréditaires', slug: 'genetique-9eme', summary: 'Introduction à la génétique et aux lois de Mendel.', order: 1, score: 110 },
-  { id: 'lesson-9', subjectSlug: 'svt-9eme', title: 'Le système nerveux', slug: 'systeme-nerveux-9eme', summary: 'Organisation et fonctionnement du système nerveux.', order: 2, score: 95 },
+  // --- Lycée ---
+  // 1ère
+  { id: 'lesson-l1-1', subjectSlug: 'histoire-1ere', title: 'La Renaissance en Europe', slug: 'renaissance-europe', summary: 'Les grandes découvertes et les changements culturels.', order: 1, score: 65 },
+  { id: 'lesson-l1-2', subjectSlug: 'geo-1ere', title: 'Les climats dans le monde', slug: 'climats-monde', summary: 'Les facteurs et la répartition des grands domaines climatiques.', order: 1, score: 60 },
+  { id: 'lesson-l1-3', subjectSlug: 'physique-chimie-1ere', title: 'L\'atome', slug: 'atome-1ere', summary: 'Modèles atomiques et structure de l\'atome.', order: 1, score: 70 },
+  // 2ème
+  { id: 'lesson-l2-1', subjectSlug: 'economie-2eme', title: 'Le Marché', slug: 'marche-eco', summary: 'La loi de l\'offre et de la demande.', order: 1, score: 90 },
+  { id: 'lesson-l2-2', subjectSlug: 'gestion-2eme', title: 'L\'entreprise et son environnement', slug: 'entreprise-env', summary: 'Les différentes composantes de l\'environnement de l\'entreprise.', order: 1, score: 85 },
+  { id: 'lesson-l2-3', subjectSlug: 'techno-2eme', title: 'Introduction à la CAO', slug: 'cao-2eme', summary: 'Principes de base de la Conception Assistée par Ordinateur.', order: 1, score: 75 },
+  // 3ème
+  { id: 'lesson-l3-1', subjectSlug: 'maths-3eme-sciences', title: 'Les limites de fonctions', slug: 'limites-3eme', summary: 'Calcul des limites et formes indéterminées.', order: 1, score: 100 },
+  { id: 'lesson-l3-2', subjectSlug: 'algo-3eme', title: 'Les pointeurs et l\'allocation dynamique', slug: 'pointeurs-3eme', summary: 'Manipulation de la mémoire en C/Pascal.', order: 1, score: 95 },
+  { id: 'lesson-l3-3', subjectSlug: 'philo-3eme', title: 'La raison et le réel', slug: 'raison-reel', summary: 'Introduction à l\'épistémologie.', order: 1, score: 80 },
 
-  // Info 8ème
-  { id: 'lesson-10', subjectSlug: 'info-8eme', title: 'Les Boucles', slug: 'boucles-algo', summary: 'Apprendre à utiliser les boucles (Pour, Tant que).', order: 1, score: 45 },
-  { id: 'lesson-11', subjectSlug: 'info-8eme', title: 'Les Tableaux', slug: 'tableaux-algo', summary: 'Manipulation des tableaux à une dimension.', order: 2, score: 60 },
+  // BAC
+  { id: 'lesson-bac-1', subjectSlug: 'maths-bac', title: 'Fonctions Logarithmiques', slug: 'fonctions-log', summary: 'Étude complète des fonctions logarithmiques.', order: 1, score: 125 },
+  { id: 'lesson-bac-2', subjectSlug: 'maths-bac', title: 'Nombres Complexes', slug: 'nombres-complexes', summary: 'Introduction aux nombres complexes et à leurs applications.', order: 2, score: 98 },
+  { id: 'lesson-bac-3', subjectSlug: 'maths-bac', title: 'Probabilités', slug: 'probabilites', summary: 'Probabilités conditionnelles et lois de probabilité.', order: 3, score: 150 },
+  { id: 'lesson-bac-4', subjectSlug: 'physique-chimie-bac', title: 'La Dipôle RC', slug: 'dipole-rc', summary: 'Analyse du comportement d\'un dipôle RC.', order: 1, score: 210 },
+  { id: 'lesson-bac-5', subjectSlug: 'physique-chimie-bac', title: 'Modulation et Démodulation', slug: 'modulation', summary: 'Principes de la modulation d\'amplitude.', order: 2, score: 180 },
+  { id: 'lesson-bac-6', subjectSlug: 'info-bac', title: 'Les Graphes', slug: 'graphes-bac', summary: 'Théorie des graphes et algorithmes associés (Parcours, Dijkstra).', order: 1, score: 160 },
+  { id: 'lesson-bac-7', subjectSlug: 'philo-bac', title: 'La Conscience et l\'Inconscient', slug: 'conscience-inconscient-bac', summary: 'Analyse des théories de Freud et de ses critiques.', order: 1, score: 130 },
+  { id: 'lesson-bac-8', subjectSlug: 'philo-bac', title: 'La Liberté', slug: 'liberte-bac', summary: 'Le déterminisme contre le libre arbitre.', order: 2, score: 142 },
 
-  // Maths 7ème
-  { id: 'lesson-12', subjectSlug: 'maths-7eme', title: 'Les ensembles et les opérations', slug: 'ensembles-7eme', summary: 'Opérations sur les ensembles: intersection, union.', order: 1, score: 88 },
-  { id: 'lesson-13', subjectSlug: 'maths-7eme', title: 'Angles et parallélisme', slug: 'angles-7eme', summary: 'Propriétés des angles et des droites parallèles.', order: 2, score: 78 },
-
-  // Philo BAC
-  { id: 'lesson-14', subjectSlug: 'philo-bac', title: 'La Conscience et l\'Inconscient', slug: 'conscience-inconscient-bac', summary: 'Analyse des théories de Freud et de ses critiques.', order: 1, score: 130 },
-  { id: 'lesson-15', subjectSlug: 'philo-bac', title: 'La Liberté', slug: 'liberte-bac', summary: 'Le déterminisme contre le libre arbitre.', order: 2, score: 142 },
-
-  // Economie 2ème
-  { id: 'lesson-16', subjectSlug: 'economie-2eme', title: 'Le Marché', slug: 'marche-eco', summary: 'La loi de l\'offre et de la demande.', order: 1, score: 90 },
-
-  // Calcul 1ère
-  { id: 'lesson-17', subjectSlug: 'calcul-1ere', title: 'Les nombres jusqu\'à 10', slug: 'nombres-10', summary: 'Compter, lire et écrire les nombres de 1 à 10.', order: 1, score: 30 },
-  { id: 'lesson-18', subjectSlug: 'calcul-1ere', title: 'L\'addition simple', slug: 'addition-simple', summary: 'Additionner deux nombres dont la somme est inférieure à 10.', order: 2, score: 40 },
 ];
 
 export const recordedSessions: RecordedSession[] = [
@@ -519,5 +550,9 @@ export const dashboardStats: DashboardStats = {
 };
 
     
+
+    
+
+
 
     
