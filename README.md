@@ -1,6 +1,7 @@
 # TunEdu - Modern Learning Platform
 
 TunEdu is a modern, feature-rich e-learning platform built with Next.js and designed for the Tunisian curriculum. It provides students with an interactive and engaging way to access lessons, exercises, and AI-powered assistance.
+**Demo Video:** [Watch the demo on YouTube](https://youtu.be/3eMM4jyOY30)
 
 ## Features
 
