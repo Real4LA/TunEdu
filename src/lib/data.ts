@@ -35,57 +35,164 @@ export const classYears: ClassYear[] = [
 ];
 
 export const subjects: Subject[] = [
-  { 
-    id: 'subj-1', 
-    classYearSlug: 'bac', 
-    name: 'Mathématiques', 
-    slug: 'maths-bac', 
-    description: 'Programme complet de mathématiques pour la section Bac Sciences Expérimentales.', 
-    manualUrl: '/sample.pdf',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&h=400&fit=crop',
-    thumbnailHint: 'abstract math'
-  },
-  { 
-    id: 'subj-2', 
-    classYearSlug: 'bac', 
-    name: 'Physique-Chimie', 
-    slug: 'physique-chimie-bac', 
-    description: 'Physique et Chimie pour la section Bac Sciences.', 
-    manualUrl: '/sample.pdf',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=600&h=400&fit=crop',
-    thumbnailHint: 'abstract physics'
-  },
-  { 
-    id: 'subj-3', 
-    classYearSlug: 'bac', 
-    name: 'Informatique', 
-    slug: 'info-bac', 
-    description: 'Algorithmique et programmation pour le Bac.', 
-    manualUrl: '/sample.pdf',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&h=400&fit=crop',
-    thumbnailHint: 'circuit board'
-  },
-  { 
-    id: 'subj-4', 
-    classYearSlug: '9eme-annee', 
-    name: 'Français', 
-    slug: 'francais-9eme', 
-    description: 'Langue et littérature française pour la 9ème année.', 
+  // --- 9ème Année ---
+  {
+    id: 'subj-4',
+    classYearSlug: '9eme-annee',
+    name: 'Français',
+    slug: 'francais-9eme',
+    description: 'Langue et littérature française pour la 9ème année.',
     manualUrl: '/sample.pdf',
     thumbnailUrl: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'eiffel tower'
   },
-  { 
-    id: 'subj-5', 
-    classYearSlug: '9eme-annee', 
-    name: 'Arabe', 
-    slug: 'arabe-9eme', 
-    description: 'Langue et littérature Arabe pour la 9ème année.', 
+  {
+    id: 'subj-5',
+    classYearSlug: '9eme-annee',
+    name: 'Arabe',
+    slug: 'arabe-9eme',
+    description: 'Langue et littérature Arabe pour la 9ème année.',
     manualUrl: '/sample.pdf',
     thumbnailUrl: 'https://images.unsplash.com/photo-1627490079334-135b9a702a4a?q=80&w=600&h=400&fit=crop',
     thumbnailHint: 'arabic calligraphy'
   },
+  {
+    id: 'subj-6',
+    classYearSlug: '9eme-annee',
+    name: 'Mathématiques',
+    slug: 'maths-9eme',
+    description: 'Programme de mathématiques pour la 9ème année.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abstract math'
+  },
+  {
+    id: 'subj-7',
+    classYearSlug: '9eme-annee',
+    name: 'Sciences de la Vie et de la Terre',
+    slug: 'svt-9eme',
+    description: 'Biologie et géologie pour la 9ème année.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'science lab'
+  },
+  // --- BAC (4ème Année) ---
+  {
+    id: 'subj-1',
+    classYearSlug: 'bac',
+    name: 'Mathématiques',
+    slug: 'maths-bac',
+    description: 'Programme complet de mathématiques pour la section Bac Sciences Expérimentales.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abstract math'
+  },
+  {
+    id: 'subj-2',
+    classYearSlug: 'bac',
+    name: 'Physique-Chimie',
+    slug: 'physique-chimie-bac',
+    description: 'Physique et Chimie pour la section Bac Sciences.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abstract physics'
+  },
+  {
+    id: 'subj-3',
+    classYearSlug: 'bac',
+    name: 'Informatique',
+    slug: 'info-bac',
+    description: 'Algorithmique et programmation pour le Bac.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'circuit board'
+  },
+  {
+    id: 'subj-8',
+    classYearSlug: 'bac',
+    name: 'Philosophie',
+    slug: 'philo-bac',
+    description: 'Les grands courants de la pensée philosophique.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1456325504700-a91019e0e3c5?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'ancient ruins'
+  },
+  // --- 1ère Année Secondaire ---
+  {
+    id: 'subj-9',
+    classYearSlug: '1ere-annee-secondaire',
+    name: 'Histoire',
+    slug: 'histoire-1ere',
+    description: 'Histoire du monde de l\'antiquité à l\'époque moderne.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1524103441346-34a12913b18c?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'ancient map'
+  },
+  {
+    id: 'subj-10',
+    classYearSlug: '1ere-annee-secondaire',
+    name: 'Géographie',
+    slug: 'geo-1ere',
+    description: 'Les grands ensembles géographiques mondiaux.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1542042161-d19f5a543313?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'world globe'
+  },
+  // --- 7ème Année ---
+  {
+    id: 'subj-11',
+    classYearSlug: '7eme-annee',
+    name: 'Anglais',
+    slug: 'anglais-7eme',
+    description: 'Introduction à la langue anglaise.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'london bridge'
+  },
+  // --- 6ème Année Primaire ---
+  {
+    id: 'subj-12',
+    classYearSlug: '6eme-annee-primaire',
+    name: 'Éducation Civique',
+    slug: 'civique-6eme',
+    description: 'Droits, devoirs et institutions.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1588698224391-236f0435538d?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'government building'
+  },
+  {
+    id: 'subj-13',
+    classYearSlug: '6eme-annee-primaire',
+    name: 'Calcul',
+    slug: 'calcul-6eme',
+    description: 'Opérations et résolution de problèmes.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'abacus numbers'
+  },
+  // --- 1ère Année Primaire ---
+  {
+    id: 'subj-14',
+    classYearSlug: '1ere-annee-primaire',
+    name: 'Lecture (Arabe)',
+    slug: 'lecture-ar-1ere',
+    description: 'Apprentissage des lettres et des sons.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'books library'
+  },
+  {
+    id: 'subj-15',
+    classYearSlug: '1ere-annee-primaire',
+    name: 'Écriture et Graphisme',
+    slug: 'ecriture-1ere',
+    description: 'Tenue du crayon et formation des lettres.',
+    manualUrl: '/sample.pdf',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?q=80&w=600&h=400&fit=crop',
+    thumbnailHint: 'pencil writing'
+  },
 ];
+
 
 export const lessons: Lesson[] = [
   { id: 'lesson-1', subjectSlug: 'maths-bac', title: 'Fonctions Logarithmiques', slug: 'fonctions-log', summary: 'Étude complète des fonctions logarithmiques.', order: 1, score: 125 },
