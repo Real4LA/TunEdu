@@ -33,7 +33,7 @@ To run this project on your local machine, follow these steps.
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Real4LA/TunEdu
     cd <project-directory>
     ```
 
